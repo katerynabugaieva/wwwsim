@@ -1,0 +1,67 @@
+<template name="post">
+    <br/>
+    <br/>
+    <br/>
+   
+    <!-- <button>bonus</button> -->
+{{#if game}}
+    <button id="bPrev" class="button button--aylen button--text-thick button--border-medium button--round-s">Предыдущий
+        вопрос
+    </button>
+    <button id="bNext" class="button button--aylen button--text-thick button--border-medium button--round-s"> Следующий
+        вопрос
+    </button>
+
+    <div>
+        <br/>
+        <span id="sNumber"></span>
+        <span id="sQ"></span>
+        <div><img id='imgQuestion' src='./december/waxxx.png' hidden></div>
+    </div>
+
+    <div>
+        <button id="bHint" class="button button--aylen button--text-thick button--border-medium button--round-s">
+            Подсказка:
+        </button>
+        <br/>
+        <br/>
+        <span id="sHint"></span>
+    </div>
+
+    <div>
+        <button id="bAnswer" class="button button--aylen button--text-thick button--border-medium button--round-s">
+            Ответ:
+        </button>
+        <br/>
+        <br/>
+        <span id="sAnswer"></span>
+        <div><img id='imgAnswer' src='./december/waxxx.png' hidden></div>
+        <br/>
+        <span id="sComment"></span>
+    </div>
+
+    {{>clock}}
+
+    <br/>
+    <br/>
+
+    <div id="dStat">
+        <button id="bYes" class="button button--aylen button--text-thick button--border-medium button--round-s">
+            Взяли
+        </button>
+        <button id="bNo" class="button button--aylen button--text-thick button--border-medium button--round-s">
+            Не
+            взяли
+        </button>
+        <input type="text" id="iWrongAnswer" placeholder="что ответили" hidden>
+        <button id="bSubmit" hidden
+                class="button button--aylen button--text-thick button--border-medium button--round-s">
+            Записать
+        </button>
+
+        <p id="pInfo"></p>
+    </div>
+    {{/if}}
+
+    <!-- {{>bonus}} -->
+</template>

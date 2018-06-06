@@ -1,0 +1,29 @@
+<template name="container">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <p id=enterText1>
+        {{enterText}}
+        </p>
+    <button class="button button--aylen button--text-thick button--border-medium button--round-s" id="www">ЧГК</button>
+    <button class="button button--aylen button--text-thick button--border-medium button--round-s" id="q14" hidden>Один из
+        четырех
+    </button>
+    <button class="button button--aylen button--text-thick button--border-medium button--round-s" id="simb" hidden>Симбиоты
+    </button>
+
+    <div id="divForWWW" hidden>
+        {{>post}}
+    </div>
+
+
+    <div id="divOneFour" hidden>
+        {{>onefourView}}
+    </div>
+
+
+    <div id="divSimbiots" hidden>
+        {{>simbiots}}
+    </div>
+</template>

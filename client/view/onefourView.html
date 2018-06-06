@@ -1,0 +1,70 @@
+<template name="onefourView">
+    <br/>
+    <br/>
+    <br/>
+
+    <div>
+        <button id="bPrev14" class="button button--aylen button--text-thick button--border-medium button--round-s">
+            Предыдущий
+            вопрос
+        </button>
+        <button id="bNext14" class="button button--aylen button--text-thick button--border-medium button--round-s">
+            Следующий
+            вопрос
+        </button>
+    </div>
+
+    <div>
+        <br/>
+        <span id="sNumber14"></span>
+        <span id="sQ14"></span>
+    </div>
+    <div>
+        <div>
+            <input type="radio" id="r1" name="answer14" value="1">
+            <span id="saA"></span>
+            <br/>
+        </div>
+        <div>
+            <input type="radio" id="r2" name="answer14" value="2">
+            <span id="saB"></span>
+            <br/>
+        </div>
+        <div>
+            <input type="radio" id="r3" name="answer14" value="3">
+            <span id="saC"></span>
+            <br/>
+        </div>
+        <div>
+            <input type="radio" id="r4" name="answer14" value="4">
+            <span id="saD"></span>
+            <br/>
+        </div>
+        <button id="answer14" class="button button--aylen button--text-thick button--border-medium button--round-s">
+            Answer
+        </button>
+        <br/>
+        <span id="scorrectAnswer"></span>
+    </div>
+    <div id="res14" hidden>
+        <h1 id="h14"></h1>
+    </div>
+    <br/>
+    <br/>
+
+    <div id="dStat" hidden>
+
+        <button id="bNo" class="button button--aylen button--text-thick button--border-medium button--round-s">
+            Не
+            взяли
+        </button>
+        <input type="text" id="iWrongAnswer" placeholder="что ответили" hidden>
+        <button id="bSubmit" hidden
+                class="button button--aylen button--text-thick button--border-medium button--round-s">
+            Записать
+        </button>
+
+        <p id="pInfo"></p>
+    </div>
+
+</template>

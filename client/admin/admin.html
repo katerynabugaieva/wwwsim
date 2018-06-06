@@ -1,0 +1,192 @@
+<template name="admin">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <h1>Hello, dear</h1>
+
+    <div>
+        <label>{{currentAdminData}}</label>
+        <label>Выбери тренировку</label>
+        <input type="text" placeholder="Дата тренировки" id="iDate">
+        <!-- <button id="bDate">Дата</button> -->
+        <label id="lDate"></label>
+        <br/>
+        <label>Preview text</label>
+        <input type="text" placeholder="preview" id="iPreviewText">
+        <button id='bPreviewText'>Текст</button>
+    </div>
+
+    <div class="some-div">------------------------------------------------------------</div>
+   
+    <!-- <select class="form-control" id="roleSelect" name="role" >
+        <option value="Relations">1111</option>
+        <option value="Guide" >       'Guide'      </option>
+        <option value="Father" >      'Father'     </option>
+        <option value="Mother" >       'Mother'      </option>
+        <option value="Husband" >   'Husband' </option>
+      
+    </select>
+    <br/>
+    <br/> <br/>
+    <br/> <br/>
+    <br/> <br/>
+    <br/>
+    <div>
+
+        <select class="form-control" id="roleSelect" name="role">
+        {{#each dataPost}}
+          {{> postItem1}}
+        {{/each}}
+        
+        </select>
+      </div>
+      {{#each dataPost}}
+      {{> postItem1}}
+    {{/each}} -->
+
+
+    
+      <!-- <br/>
+      <br/> <br/>
+      <br/> <br/>
+      <br/> <br/>
+      <br/> -->
+
+
+    <br/>
+    <br/>
+    <button id=openAdminQue class='button button--aylen button--text-thick button--border-medium button--round-s'>openAdminQue</button>
+    <div id='enterAdminQue' hidden>
+        <div style="width: 500px">
+            <input type="text" id="iN" placeholder="number">
+        </div>
+        <div style="width: 600px; position:relative; display: block">
+            <input type="text" id="iQ" placeholder="text question" style="width:100%; display: block">
+        </div>
+        <div style="width: 600px; position:relative; display: block">
+            <input type="text" id="iH" placeholder="text hint" style="width:100%; display: block">
+        </div>
+        <div style="width: 600px; position:relative; display: block">
+            <input type="text" id="iA" placeholder="text answer" style="width:100%; display: block">
+        </div>
+        <div style="width: 600px; position:relative; display: block">
+            <input type="text" id="iC" placeholder="text comments" style="width:100%; display: block">
+        </div>
+        <div>
+            <input type="text" id="iT" placeholder="text type">
+        </div>
+        <br/>
+        <div>
+            <input type="text" id="iD" placeholder="text data">
+        </div>
+        <div>
+            <input type="text" id="iQuestionImage" placeholder="question image">
+        </div>
+        <div>
+            <input type="text" id="iAnswerImage" placeholder="answer image">
+        </div>
+        <button id="bInput">Input www</button>
+        <button id="bDelete">Delete www</button>
+    </div>
+
+    <div class="some-div">------------------------------------------------------------</div>
+
+    <br/>
+    <br/>
+
+<!-- 14 -->
+<button id=openAdmin14 class='button button--aylen button--text-thick button--border-medium button--round-s'>openAdmin14</button>
+    <div id='enterAdmin14' hidden>
+        <div style="width: 500px">
+            <input type="text" id="iN14" placeholder="number">
+        </div>
+        <div style="width: 500px">
+            <input type="text" id='iQ14' placeholder="question" style="width:100%; display: block">
+        </div>
+        <div style="width: 500px">
+            <input type="text" id='iA14' placeholder="answer a" style="width:100%; display: block">
+        </div>
+        <div style="width: 500px">
+            <input type="text" id='iB14' placeholder="answer b" style="width:100%; display: block">
+        </div>
+        <div style="width: 500px">
+            <input type="text" id='iC14' placeholder="answer c" style="width:100%; display: block">
+        </div>
+        <div style="width: 500px">
+            <input type="text" id='iD14' placeholder="answer d" style="width:100%; display: block">
+        </div>
+        <div style="width: 500px">
+            <input type="text" id='iAns14' placeholder="answer" style="width:100%; display: block">
+        </div>
+        <br/>
+        <div style="width: 500px">
+            <input type="text" id="iDate14" placeholder="text data" style="width:100%; display: block">
+        </div>
+        <button id="bInput14">Input 14</button>
+        <button id="bDelete14">Delete 14</button>
+    </div>
+
+    <div class="some-div">------------------------------------------------------------</div>
+
+    <br/>
+    <br/>
+    <button id='openAdminSimbiots' class='button button--aylen button--text-thick button--border-medium button--round-s'>openAdminSimbiots</button>
+    
+    <div id='enterAdminSimbiots' hidden>
+        <div style="width: 500px" >
+            <input type="text" id="iNSimbiot" placeholder="number">
+        </div>
+        <div style="width: 500px">
+            <input type="text" id='iFirst' placeholder="first simbiot" style="width:100%; display: block">
+        </div>
+        <div style="width: 500px">
+            <input type="text" id='iSecond' placeholder="second simbiot" style="width:100%; display: block">
+        </div>
+
+        <div style="width: 500px">
+            <input type="number" id="iNum" min="1">
+        </div>
+        <div style="width: 500px">
+            <input type="text" id='iAnsSimb' placeholder="answer" style="width:100%; display: block">
+        </div>
+
+        <br/>
+        <div style="width: 500px">
+            <input type="text" id="iDateSimb" placeholder="text data" style="width:100%; display: block">
+        </div>
+        <button id="bInputSimbiot">Input simbiot</button>
+        <button id="bDeleteSimbiot">Delete simbiot</button>
+    </div>
+
+    <div class="some-div">------------------------------------------------------------</div>
+
+    <br/>
+    <br/>
+
+    <button id="bStat">Statistic Question</button>
+    <div id="divStat" hidden>
+        {{>statView}}
+    </div>
+
+    <button id="bQue">Questions</button>
+    <div id="divQue" hidden>
+        {{>queView}}
+    </div>
+
+    <button id="bSimb">Simbiots</button>
+    <div id="divSimb" hidden>
+        {{>simbView}}
+    </div>
+</template>
+
+
+<template name="postItem1">
+    <!-- 123456 -->
+  <!-- <div class="post"> -->
+    <div class="post-content">
+            <option value="Relations"> {{data}}1</option>
+    </div>
+  <!-- </div> -->
+</template>

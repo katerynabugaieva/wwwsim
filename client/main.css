@@ -1,0 +1,318 @@
+/* CSS declarations go here */
+body {
+    background: #eee;
+    color: #666666;
+    margin-left: 5%;
+}
+
+svg {
+    width: 25%;
+}
+
+span {
+    font-size: 15px;
+}
+
+#timer {
+    text-align: center;
+}
+
+#hCount {
+    text-align: center;
+    color: red;
+    font-size: 25px;
+}
+
+button {
+    color: #222;
+}
+
+/*#bNext{*/
+/*margin-left: 50%;*/
+/*}*/
+
+#bPrev {
+    margin-right: 30%;
+}
+
+#start {
+    text-align: center;
+    margin-left: 15%;
+    width: 70%;
+}
+
+.button--size-s {
+    font-size: 14px;
+}
+
+/* line 443, main.scss */
+.button--size-m {
+    font-size: 16px;
+}
+
+/* line 447, main.scss */
+.button--size-l {
+    font-size: 18px;
+}
+
+/* line 451, main.scss */
+.button--text-medium {
+    font-weight: 500;
+}
+
+/* line 455, main.scss */
+.button--text-thick {
+    font-weight: 600;
+}
+
+/* line 459, main.scss */
+.button--round-s {
+    border-radius: 5px;
+}
+
+/* line 463, main.scss */
+.button--border-medium {
+    border: 2px solid;
+}
+
+/* line 467, main.scss */
+.button {
+    margin-top: 0;
+    padding: 0.75em 2em;
+    border: none;
+    background: none;
+    color: inherit;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+}
+
+/* line 476, main.scss */
+.button:focus {
+    outline: none;
+}
+
+/* line 479, main.scss */
+.button > span {
+    vertical-align: middle;
+}
+
+/* line 484, main.scss */
+.button--round-s.button--quidel::after {
+    border-radius: 3px;
+}
+
+/* line 488, main.scss */
+.button.button--aylen {
+    background: #ffb780;
+    color: #37474f;
+    overflow: hidden;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+/* line 497, main.scss */
+.button--aylen.button--inverted {
+    background: none;
+    color: #fff;
+}
+
+/* line 501, main.scss */
+.button--aylen::before, .button--aylen::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 100%;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+/* line 514, main.scss */
+.button--aylen::before {
+    background: #fff;
+    opacity: 0.25;
+}
+
+/* line 518, main.scss */
+.button--aylen::after {
+    background: #f07844;
+}
+
+/* line 521, main.scss */
+.button--aylen:hover {
+    color: #fff;
+}
+
+/* line 523, main.scss */
+.button--aylen:hover::before {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+/* line 527, main.scss */
+.button--aylen:hover::after {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    -webkit-transition-delay: 0.175s;
+    transition-delay: 0.175s;
+}
+
+.some-div {
+    width: 500px;
+    height: 1px;
+    display: block;
+}
+
+.simbSpan {
+    width: 150px;
+    border: 1px solid;
+}
+
+#divForSimbItem span{
+    display: block;
+}
+#divForSimbItem label{
+    display: block;
+}
+
+#divForSimbItem inp{
+    display: block;
+    /* type: text; */
+}
+
+.disabledClass{
+    pointer-events:none;
+    opacity: 90%;
+}
+
+
+
+
+/* #label2{
+    font-size: 1000%;
+    text-align: center;
+    position: relative;
+   left: 45%;
+} */
+/*for december*/
+#label2{
+    font-size: 500%;
+    text-align: center;
+    position: relative;
+   left: 55%;
+}
+#timer2{
+    display: inline;
+    /* width: 100px; */
+}
+
+#imgQuestion{
+    width: 400px;
+    height: auto;
+}
+#imgAnswer{
+    width: 400px;
+    height: auto;
+}
+
+
+#divForVideo .new-cabinet-content-col {
+    display: table;
+    width: 100%;
+    line-height: 0;
+  }
+  #divForVideo {
+    position: relative;
+  display: table;
+  width: 100%;
+}
+
+
+
+
+
+.newcabinetScreen {
+    background: #4a4d53; /* Old browsers */
+    background: -moz-linear-gradient(top, #4a4d53 0%, #191d24 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #4a4d53 0%,#191d24 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #4a4d53 0%,#191d24 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a4d53', endColorstr='#191d24',GradientType=0 ); /* IE6-9 */
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0px 0px 15px 0px rgba(255,255,255,1);
+    -moz-box-shadow: inset 0px 0px 15px 0px rgba(255,255,255,1);
+    box-shadow: inset 0px 0px 15px 0px rgba(255,255,255,1);
+    padding: 30px 25px;
+    display: table;
+    color: #fff;
+  }
+  .new-cabinet-content-col {
+    display: table-cell;
+    position: relative;
+    overflow: hidden;
+    vertical-align: top;
+    width: 80%;
+    background-color: #32363D;
+    border-radius: 16px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(80,113,199,1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(80,113,199,1);
+    box-shadow: 0px 0px 15px 0px rgba(80,113,199,1);
+  }
+
+
+
+
+
+
+
+
+
+  #bodyIt {
+    margin:-10%;
+    height: 1200px;
+    background:black;
+ }
+ .title {
+    position:fixed;
+    top:30%;
+    left:50%;
+    transform:translate(-50%, -50%) scale(10);
+    font-size:1em;
+    text-shadow:0 0 1px yellow;
+    text-align:center;
+    animation:5s title-animation;
+    animation-fill-mode:forwards;
+ }
+ @keyframes title-animation {
+    100% {
+       transform: translate(-50%, -50%) scale(0);
+    }
+ }
+ 
+ .mask {
+    width:30em;
+    font-size:1.7em;
+    margin:0 auto;
+    transform: perspective(250px) rotateX(45deg) translate(0, 150%);
+    /* 
+     * browser support: http://caniuse.com/#feat=transforms3d 
+     */
+    color:yellow;
+    animation:120s enroll;
+    animation-delay:5s;
+    animation-fill-mode: forwards;
+ }
+ .mask div {
+    background:black;
+ }
+ @keyframes enroll {
+    100% {
+       transform: perspective(250px) rotateX(45deg) translate(0, -1200px);
+    }
+ }
