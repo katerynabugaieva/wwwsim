@@ -1,3 +1,4 @@
+//connect to github
 import './main.html';
 
 if(Meteor.isClient) {
