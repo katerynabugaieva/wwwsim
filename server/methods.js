@@ -1,6 +1,4 @@
-/**
- * Created by 1000geeks on 24.04.17.
- */
+
 Meteor.methods({
 
     reset: function () {

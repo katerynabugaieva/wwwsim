@@ -1,6 +1,4 @@
-/**
- * Created by 1000g_2 on 26.10.17.
- */
+
 Template.container.helpers({
     enterText: function(){
         let text = AdminData.find().fetch()[AdminData.find().fetch().length - 1].text;

@@ -1,9 +1,4 @@
-/**
- * Created by 1000g_2 on 26.10.17.
- */
-/**
- * Created by 1000g_2 on 26.10.17.
- */
+
 Template.onefourView.events({
     'click #bPrev14': function () {
         console.log('q');

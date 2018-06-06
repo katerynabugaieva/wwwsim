@@ -1,6 +1,4 @@
-/**
- * Created by 1000geeks on 24.04.17.
- */
+
 Accounts.onCreateUser(function (options, user) {
     user.profile = {'roles': ['admin']};
     Customers.insert({
