@@ -4,14 +4,21 @@
             <br/>
             <br/>
             <br/>
-            <br/>
-            <br/>
-            <br/>
+          
             <br/> {{#if isUser}} this is admin part, honey
             <a href="{{pathFor 'container'}}">go home</a>
 
-            {{else}} You should login {{>atNavButton}} {{/if}}
+            {{else}} 
+            <div>    
+                <input type="checkbox" />
+                <span>I agree to the collection and processing of my data</span>
+            </div>
+            <div>
+                <img src='/IMG_2353.jpg' alt='or not'/> 
+            </div>
+            You should login {{>atNavButton}} {{/if}}
             <div class="container text-center">
+                   
                 <h4>
                     <a href="#"></a>2017 and i still working</h4>
             </div>
