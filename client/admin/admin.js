@@ -1,5 +1,4 @@
-
-
+ let shortTrain = 0;
 // Template.admin.onRendered({
 //     currenAdminData: function () {
 //         let date = AdminData.findOne();
@@ -41,7 +40,14 @@ Template.admin.events({
         let forTr = {};
         forTr.text = $('#iPreviewText').val();
         forTr.date = $('#iDate').val();
-
+       
+        if($('#shortT').prop('checked')){ 
+            shortTrain = 1;
+         } else {
+             shortTrain = 0;
+         }  
+         
+         forTr.shortTrain = shortTrain;
         number = 0;
 
         $('#lDate').text(forTr.date);
@@ -258,6 +264,13 @@ Template.admin.events({
     },
     'click #openAdminQue': function () {
         $('#enterAdminQue').toggle();
+    }, 
+    'change #shortT': function(){
+        if($('#shortT').prop('checked')){ 
+           shortTrain = 1;
+        } else {
+            shortTrain = 0;
+        }  
     }
 });
 
@@ -270,23 +283,3 @@ function getRandomInt(min, max) {
 
 
 let item = 0;
-// Template.postItem1.helpers({
-//     data: function () {
-//         console.log(item);
-//         var a = document.createElement('option');
-//         //  a.type = 'button';
-//         a.value = 12; //(AdminData.find().fetch()[item].date)
-
-//         console.log(a)
-//         item++;
-
-//         return a.value;
-//     },
-// });
-
-
-
-
-
-
-  //cursor: not-allowed;

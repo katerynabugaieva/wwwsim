@@ -2,7 +2,7 @@ number = 0;
 
 Template.post.helpers({
     game: function () {
-        console.log(number);
+      //  console.log(number);
         if (number < 5)
             return true;
         else {
@@ -11,7 +11,18 @@ Template.post.helpers({
     },
     bonus: function () {
 
-    }
+    },
+    // admin: function(){
+    //     let admin = AdminData.find().fetch()[AdminData.find().fetch().length - 1];
+    //     if(admin.shortTrain === 1){
+    //         console.log('short')
+    //         return true;
+    //     } else{
+    //         console.log('long')
+    //         return false;
+    //     }
+    //    // console.log(admin)
+    // }
 })
 
 Template.post.events({
@@ -58,7 +69,7 @@ Template.post.events({
             $('#sComment').text('');
             $('#pInfo').text('');
             $('#bNext').addClass('disabledClass');
-            console.log(number)
+           // console.log(number)
             $('#imgAnswer').hide();
             
 

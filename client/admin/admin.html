@@ -15,45 +15,15 @@
         <br/>
         <label>Preview text</label>
         <input type="text" placeholder="preview" id="iPreviewText">
+        <br/>
+        <label>Короткая тренировка</label>
+        <input type='checkbox' placeholder="короткая тренировка" id='shortT'>
         <button id='bPreviewText'>Текст</button>
+       
     </div>
 
     <div class="some-div">------------------------------------------------------------</div>
    
-    <!-- <select class="form-control" id="roleSelect" name="role" >
-        <option value="Relations">1111</option>
-        <option value="Guide" >       'Guide'      </option>
-        <option value="Father" >      'Father'     </option>
-        <option value="Mother" >       'Mother'      </option>
-        <option value="Husband" >   'Husband' </option>
-      
-    </select>
-    <br/>
-    <br/> <br/>
-    <br/> <br/>
-    <br/> <br/>
-    <br/>
-    <div>
-
-        <select class="form-control" id="roleSelect" name="role">
-        {{#each dataPost}}
-          {{> postItem1}}
-        {{/each}}
-        
-        </select>
-      </div>
-      {{#each dataPost}}
-      {{> postItem1}}
-    {{/each}} -->
-
-
-    
-      <!-- <br/>
-      <br/> <br/>
-      <br/> <br/>
-      <br/> <br/>
-      <br/> -->
-
 
     <br/>
     <br/>
@@ -82,22 +52,22 @@
             <input type="text" id="iD" placeholder="text data">
         </div>
         <div>
-            <input type="text" id="iQuestionImage" placeholder="question image">
+            <input type="text" id="iQuestionImage" placeholder="question image" hidden>
         </div>
         <div>
-            <input type="text" id="iAnswerImage" placeholder="answer image">
+            <input type="text" id="iAnswerImage" placeholder="answer image" hidden>
         </div>
         <button id="bInput">Input www</button>
         <button id="bDelete">Delete www</button>
     </div>
 
-    <div class="some-div">------------------------------------------------------------</div>
+    <div hidden class="some-div">------------------------------------------------------------</div>
 
     <br/>
     <br/>
 
 <!-- 14 -->
-<button id=openAdmin14 class='button button--aylen button--text-thick button--border-medium button--round-s'>openAdmin14</button>
+<button hidden id=openAdmin14 class='button button--aylen button--text-thick button--border-medium button--round-s'>openAdmin14</button>
     <div id='enterAdmin14' hidden>
         <div style="width: 500px">
             <input type="text" id="iN14" placeholder="number">
@@ -128,12 +98,12 @@
         <button id="bDelete14">Delete 14</button>
     </div>
 
-    <div class="some-div">------------------------------------------------------------</div>
+    <div hidden class="some-div">------------------------------------------------------------</div>
 
     <br/>
     <br/>
-    <button id='openAdminSimbiots' class='button button--aylen button--text-thick button--border-medium button--round-s'>openAdminSimbiots</button>
-    
+    <!--simbiots-->
+    <button hidden id='openAdminSimbiots' class='button button--aylen button--text-thick button--border-medium button--round-s'>openAdminSimbiots</button>   
     <div id='enterAdminSimbiots' hidden>
         <div style="width: 500px" >
             <input type="text" id="iNSimbiot" placeholder="number">
@@ -160,7 +130,7 @@
         <button id="bDeleteSimbiot">Delete simbiot</button>
     </div>
 
-    <div class="some-div">------------------------------------------------------------</div>
+    <div hidden class="some-div">------------------------------------------------------------</div>
 
     <br/>
     <br/>
