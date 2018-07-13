@@ -316,3 +316,8 @@ button {
        transform: perspective(250px) rotateX(45deg) translate(0, -1200px);
     }
  }
+
+
+ #iQ{
+height: 100px;
+ }

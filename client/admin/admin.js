@@ -26,16 +26,13 @@
 //});
 
 Template.admin.events({
-    // 'click #bDate': function () {
-    //     let DateForTr = {};
-    //     DateForTr.date = $('#iDate').val();
-
-    //     number = 0;
-
-    //     AdminData.insert(DateForTr);
-    //     console.log(DateForTr);
-    // },
-
+    'click #withoutHints': function(){
+        if($('#withoutHints').prop('checked')){
+            $('#iH').hide();
+        } else{
+            $('#iH').show();
+        }
+    },
     'click #bPreviewText': function () {
         let forTr = {};
         forTr.text = $('#iPreviewText').val();
@@ -57,7 +54,7 @@ Template.admin.events({
 
     'click #bInput': function () {
         let num = parseInt($('#iN').val());
-        console.log(num);
+       // console.log(num);
 
         let checkQ = Questions.find({ numberRandom: num }).fetch();
 
@@ -105,7 +102,6 @@ Template.admin.events({
                 prop.answerImage = $('#iAnswerImage').val();
             }
 
-
             Questions.update(checkQ[0]._id, { $set: prop }, function (error) {
                 if (error) {
                     alert(error.reason);
@@ -114,6 +110,11 @@ Template.admin.events({
                 }
             });
         }
+      
+      $('#iQ').val('');
+      $('#iA').val('');
+      $('#iH').val('');
+      $('#iC').val('');
     },
     'click #bDelete': function () {
         let num = parseInt($('#iN').val());
@@ -126,6 +127,11 @@ Template.admin.events({
             Questions.remove(checkQ[0]._id);
             console.log('delete');
         }
+        $('#iN').val('');
+        $('#iQ').val('');
+        $('#iA').val('');
+        $('#iH').val('');
+        $('#iC').val('');
     },
 
     //OneFour
