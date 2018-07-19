@@ -33,6 +33,10 @@ Template.admin.events({
             $('#iH').show();
         }
     },
+    'change #iD': function(){
+        let dateArray = Questions.find({data: $('#iD').val()}).fetch();
+        $('#numberInPackage').text('В текущем пакете ' + dateArray.length);
+    },
     'click #bPreviewText': function () {
         let forTr = {};
         forTr.text = $('#iPreviewText').val();
@@ -57,7 +61,6 @@ Template.admin.events({
        // console.log(num);
 
         let checkQ = Questions.find({ numberRandom: num }).fetch();
-
         console.log(checkQ);
 
         let prop = {};
@@ -115,14 +118,18 @@ Template.admin.events({
       $('#iA').val('');
       $('#iH').val('');
       $('#iC').val('');
+
+      $('#numberInPackage').text('В текущем пакете ' + Questions.find({ data: prop.data }).fetch().length);
     },
     'click #bDelete': function () {
         let num = parseInt($('#iN').val());
         console.log(num);
 
-        let checkQ = Questions.find({ numberRandom: num }).fetch();
-
+        let checkQ = Questions.find({ numberRandom: num }).fetch(); 
+        let date = checkQ[0].data;
         console.log(checkQ);
+        $('#numberInPackage').text('В текущем пакете ' + Questions.find({ data: date }).fetch().length);
+
         if (checkQ.length === 1) {
             Questions.remove(checkQ[0]._id);
             console.log('delete');
@@ -132,6 +139,7 @@ Template.admin.events({
         $('#iA').val('');
         $('#iH').val('');
         $('#iC').val('');
+        
     },
 
     //OneFour
